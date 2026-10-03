@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor appointment</title>
+</head>
+<body>
+    <h1>My doctor's appointment</h1>
+    <p>Fill in the form blow</p>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>please fill in your personal information</legend>
+            <label>your name</label>
+            <input type="text" id="name" placeholder="enter your full name"><br><br>
+            <label>patient ID</label>
+            <input type="password" id="pid" placeholder="enter your patient ID"><br><br>
+            <label>Date of birth</label>
+            <input type="date" id="db"><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>your visit</legend>
+            <label>chooise your doctor</label>
+            <select id="doctor">
+                <option value="">select a doctor</option>
+                <option value="dr-a">doctor A</option>
+                <option value="dr-b">doctor B</option>
+                <option value="dr-c">doctor C</option>
+            </select><br><br>
+            <label>why are you visting</label><br>
+            <input type="radio" name="reation" value="fever">fever<br>
+            <input type="radio" name="reation" value="cold">cold<br>
+            <input type="radio" name="reation" value="check up">check up<br>
+            <input type="radio" name="reation" value="tooth">tooth<br><br>
+            <label>Any notes for the doctor</label>
+            <textarea id="notes" rows="3" cols="50" placeholder="e.g sore throght"></textarea><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>perferd visit day</legend>
+            <input type="checkbox" value="mon">Monday<br>
+            <input type="checkbox" value="wed">Wednesday<br>
+            <input type="checkbox" value="fir">Firday<br>
+        </fieldset><br>
+        <input type="submit" value="book my appointment">
+    </form>
+</body>
+</html>
